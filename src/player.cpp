@@ -2923,7 +2923,6 @@ void Player::autoCloseContainers(ContainerPtr container)
 		closeList.push_back(cid);
 	}
 
-	// Close all marked containers
 	for (uint32_t cid : closeList) {
 		closeContainer(cid);
 		if (client) {
